@@ -1,7 +1,7 @@
 <!-- Error 1 (Line 2): missing <!DOCTYPE html> -->
 <!DOCTYPE html>
-<html>
-  <!-- Error 2 (Line 5): missing <html lang="en"> -->
+
+<!-- Error 2 (Line 5): missing lang="en"> -->
   <html lang="en">
   <head>
 
@@ -14,8 +14,8 @@
 
   <!-- Error 4 (Line 16): mistype h1 to h2> -->
   <h1>Welcome to Campus Coding Club</h1>
-  <!-- Error 5 (Line 18): missing </p> -->
-  <p>We meet every <strong><em>Wednesday</strong></em> at Lab 3.</p>
+  <!-- Error 5 (Line 18): missing </p> and strong with em cant be use together at same time-->
+  <p>We meet every <strong>Wednesday</strong> at Lab 3.</p>
   <!-- Error 6 (Line 20): missing "/" in <h2> -->
   <h2>Our Activities</h2>
     
@@ -30,10 +30,12 @@
 
   <!-- Error 9 (Line 32): missing "" for links and missing target="_blank"> -->
   <p>Visit our university: <a href="www.umt.edu.my" target="_blank">UMT Website</a></p>
-  
-  <img src="club.jpg">
-    
-  <p>Copyright (c) 2026 Campus Coding Club & Friends</p>
+
+  <!-- Error 10 (Line 35): missing alt attribute -->
+  <img src="club.jpg" alt = "Placeholder Image">
+
+    <!-- Error 11 (Line 38): Use &copy; and &amp; instead-->
+  <p>Copyright &copy; 2026 Campus Coding Club &amp; Friends</p>
 </body>
     <!-- Error 9 (Line 32): missing "" for links and missing target="_blank"> -->
   </html>
