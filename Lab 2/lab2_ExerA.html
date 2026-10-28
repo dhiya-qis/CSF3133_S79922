@@ -5,7 +5,14 @@
   <title>Hackathon Day 2026</title>
 </head>
 <body>
-  <header><h1>Hackathon Day 2026</h1></header>
+  
+  <!-- Header and tagline -->
+  <header><h1>Hackathon Day 2026</h1>
+          <p>Empowering Innovation, Shaping Future Tech Leaders</p>
+  </header>
+
+
+  <!-- Navigation Bar -->
   <nav><a href="#schedule">Event Schedule</a>
     | <a href="#register">Registeration</a>
     | <a href="#about">About The Event</a>
@@ -13,7 +20,8 @@
   </nav>
   
   <main id="main">
-    
+
+    <!-- 1. SECTION ABOUT THE EVENT -->
     <section id = "about">
       <h2>About The Event</h2><p>Welcome to the Hackathon Day 2026 Event</p>
       <article>
@@ -28,8 +36,11 @@
 
     </section>
 
+    <!-- SECTION EVENT SCHEDULE TABLE-->
     <section id = "schedule">
-      <table>
+	  <h2>Event Schedule</h2>
+	  <table border="1">
+      
         <tr>
           <th>Time</th>
           <th>Activity</th>
@@ -37,10 +48,12 @@
           <th>Person in Charge</th>
         </tr>
 
+
+        <!-- TABLE DATA -->
         <!-- Row 1 -->
         <tr>
           <td>7.00 am - 8.00 am</td>
-          <td>Participation Registration & Arrival</td>
+          <td>Participation Registration</td>
           <td>Main Lobby</td>
           <td>Puan Fatimah</td>
         </tr>
@@ -48,12 +61,12 @@
         <!-- Row 2 -->
         <tr>
           <td>8.00 am - 9.00 am</td>
-          <td>Opening & Speech Ceremony</td>
+          <td>Opening Speech Ceremony</td>
           <td>Dewan Sri Kemboja</td>
           <td>Dr. Zulkifli</td>
         </tr>
 
-        <!-- Row 3 -->
+        <!-- Row 3 rowspan example-->
         <tr>
           <td>9.00 am - 10.00 am</td>
           <td>Industry Tech Talk</td>
@@ -61,32 +74,97 @@
           <td>En. Kamarul</td>
         </tr>
 
-        <!-- Row 4 -->
+        <!-- Row 4 continuation of rowspan-->
         <tr>
           <td>11.00 am - 1.00 pm</td>
           <td>Lunch Break and Q&A Session</td>
           <td>Dr. Johan</td>
         </tr>
 
-        <!-- Row 5 -->
+        <!-- Row 5 colspan example-->
         <tr>
           <td>1.00 am - 2.30 pm</td>
-          <td></td>
-          <td></td>
+          <td colspan ="3">Artificial Intelligence Talk & Prayer Time</td>
+          
         </tr>
 
         <!-- Row 6 -->
         <tr>
           <td>3.00 pm - 4.30 pm</td>
-          <td></td>
-          <td></td>
+	        <td>Hackathon Challenge</td>
+          <td>Library</td>
+          <td>Dr. Muhammad</td>
         </tr>
-        
 
-        
       </table>
     </section>
+
+    
+    
+    <h2>Registration Form</h2>
+    <form action ="register.html" method = "post">
+
+      <!-- Text inputs for Full Name, Matric Number and E-mail -->
+      <label for ="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+
+      <label for ="matric">Matric Number:</label><br>
+      <input type="text" id="matric" name="matric" required><br><br>
+
+      <label for ="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      
+      <!-- Radio buttons for Year of Study (Year 1 – Year 4) -->
+      <label for ="year">Year of Study:</label><br>
+      <input type ="radio" id="year1" name="year" value="year1">
+      <label for="year1">Year 1</label><br>
+
+      <input type ="radio" id="year2" name="year" value="year2">
+      <label for="year2">Year 2</label><br>
+
+      <input type ="radio" id="year3" name="year" value="year3">
+      <label for="year3">Year 3</label><br>
+
+      <input type ="radio" id="year4" name="year" value="year4">
+      <label for="year4">Year 4</label><br><br>
+
+      <!-- Checkboxes for the sessions the student wants to join -->
+      <label for ="session">Select your session:</label><br>
+      <input type ="checkbox" id ="session1" name="session1"
+        value ="opening">
+        <label for ="session1"> Opening Speech Ceremony</label><br>
+
+      <input type ="checkbox" id ="session2" name="session2"
+        value ="techtalk">
+        <label for = "session2"> Industry Tech Talk and Artificial Intelligence Speech</label><br>
+
+      <input type ="checkbox" id ="session3" name="session3"
+        value ="hackathon">
+        <label for ="session3"> Hackathon Challenge</label><br><br>
+
+
+      <!-- A drop-down list (<select>) for Programme or Faculty -->
+      <label for ="programme">Choose Programme:</label>
+      <select id="programme" name="programme">
+        <option value="se">Software Engineering</option>
+        <option value="mc">Mobile Computing</option>
+        <option value="mi">Maritime Informatics</option>
+        </select><br><br>
+
+      <!-- A submit button -->
+        <input type="submit"  value="Register Here"><br><br>
+
+    </form>
+
+      
   </main>
-  <footer>Copyright information</footer>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Organised by Faculty of Science Computer and Mathemathics</p>
+    <p>Copyright &copy; 2026 UMT. All rights reserved.</p>
+  </footer>
+  
 </body>
 </html>
