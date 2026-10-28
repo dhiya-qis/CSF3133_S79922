@@ -22,7 +22,9 @@
   <tr>
     <th>Week</th>
     <th>Topic</th>
-    <td>Rating</td>
+
+    <!-- Error 3 (Line 27): cannot use <td> on table header -->
+    <th>Rating</th>
   </tr>
     
   <tr>
@@ -30,26 +32,42 @@
   <td>Introduction to HTML</td>
   <td>4.5</td>
     
+  <!-- Error 4 (Line 35): unclosed <tr> -->
+   </tr>
+
+  <!-- Error 5 (Line 39): must have <tr> -->
   <tr>
   <td>2</td>
   <td colspan="3">Tables and Forms</td>
-</tr>
+  </tr>
     
 <tr>
 <td>3</td>
-<td>Semantic HTML<td>4.0</td>
+  
+  <!-- Error 6 (Line 48): missing </td> -->
+<td>Semantic HTML</td>
+
+  <!-- Error 7 (Line 51): missing <td> -->
+  <td>4.0</td>
 </tr>
+    
 </table>
 </section>
 <section id="form">
 <h2>Give Your Feedback</h2>
 <form action="submit_feedback. php" method="post">
 <label for="name">Name :< /label>
-<input type="text" id="fullname" name="name"><br>
+
+  <!-- Error 8 (Line 62): mismatched id -->
+<input type="text" id="name" name="name"><br>
+  
 <label>Overall rating :< /label><br>
-<input type="radio" id="good" name="good" value="good">
+
+  <!-- Error 9 (Line 67): different name -->
+<input type="radio" id="good" name="rating" value="good">
 <label for="good">Good</label>
-<input type="radio" id="poor" name="poor" value="poor">
+  <!-- Error 10 (Line 70): different name -->
+<input type="radio" id="poor" name="rating" value="poor">
 <label for="poor">Poor</label><br>
 <input type="checkbox" id="lab" name="lab" value="yes">
 <label for="labs">I attended all labs</label><br>
