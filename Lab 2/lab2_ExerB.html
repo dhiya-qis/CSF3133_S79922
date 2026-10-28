@@ -1,4 +1,5 @@
-<! DOCTYPE html>
+<!-- Error 1 (Line 2): must be <!DOCTYPE html> and no space-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -7,7 +8,9 @@
 <body>
 <header>
   <h1>CSF3133 Course Feedback</h1>
-</head>
+
+  <!-- Error 2 (Line 13): cannot have 2 </head> -->
+
   
   <nav>
   <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
@@ -21,11 +24,12 @@
     <th>Topic</th>
     <td>Rating</td>
   </tr>
+    
   <tr>
-
   <td>1</td>
   <td>Introduction to HTML</td>
   <td>4.5</td>
+    
   <tr>
   <td>2</td>
   <td colspan="3">Tables and Forms</td>
