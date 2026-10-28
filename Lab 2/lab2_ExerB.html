@@ -7,15 +7,15 @@
 <body>
     <!-- 
       Error Identification List:
-      Error 1 (Line 10): Incorrect closing tag </head> instead of </header>[cite: 10, 11].
-      Error 2 (Line 20): <td> used for table header instead of <th> for Rating[cite: 10, 11].
-      Error 3 (Line 32): Unclosed <td> tag on line 32 (Semantic HTML cell)[cite: 10, 11].
-      Error 4 (Line 27): Incorrect colspan="3" on a 3-column table (should be colspan="2")[cite: 10, 11].
-      Error 5 (Line 40): Mismatched id ("fullname") and for attribute ("name") on the name input/label[cite: 10, 11].
-      Error 6 (Line 42, 44): Radio buttons have different name attributes ("good" vs "poor"), allowing simultaneous selection, and missing "Average" option[cite: 10, 11].
-      Error 7 (Line 47): Checkbox label has a mismatch ("labs" vs "lab")[cite: 10, 11].
-      Error 8 (Line 49): Typo in form closing tag </from> instead of </form>[cite: 10, 11].
-      Error 9 (Line 52): Missing semicolon in copyright entity ©[cite: 10, 11].
+      Error 1 (Line 10): Incorrect closing tag </head> instead of </header>.
+      Error 2 (Line 20): <td> used for table header instead of <th> for Rating.
+      Error 3 (Line 32): Unclosed <td> tag for 4.0 rating in Week 3 row.
+      Error 4 (Line 28): Incorrect colspan="3" on a 3-column table structure.
+      Error 5 (Line 40): Mismatched id ("fullname") and for attribute ("name") on the name input/label.
+      Error 6 (Line 42, 44): Radio buttons have different name attributes ("good" vs "poor"), and missing "Average" option.
+      Error 7 (Line 47): Checkbox label has a mismatched for attribute ("labs" vs "lab").
+      Error 8 (Line 49): Typo in form closing tag </from> instead of </form>.
+      Error 9 (Line 52): Missing semicolon in copyright entity ©.
     -->
 
     <header>
@@ -25,9 +25,10 @@
     <nav>
         <a href="#results">Results</a> | 
         <a href="#form">Feedback Form</a> | 
-        <a href="#comments">Student Comments</a>[cite: 11]
+        <a href="#comments">Student Comments</a>[cite: 14]
     </nav>
 
+    <!-- Results Section with Table Extensions (Week 4, 5, and Average Rating) -->
     <section id="results">
         <h2>Feedback Summary</h2>
         <table border="1">
@@ -43,7 +44,7 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td colspan="2">Tables and Forms</td>[cite: 11]
+                <td colspan="2">Tables and Forms</td>
             </tr>
             <tr>
                 <td>3</td>
@@ -53,7 +54,7 @@
             <!-- Table Extension: Week 4 & 5 with rowspan and Average Rating with colspan -->
             <tr>
                 <td>4</td>
-                <td rowspan="2">Mini Project</td>[cite: 11]
+                <td rowspan="2">Mini Project</td>[cite: 14]
                 <td>4.2</td>
             </tr>
             <tr>
@@ -61,12 +62,13 @@
                 <td>4.8</td>
             </tr>
             <tr>
-                <td colspan="2">Average Rating</td>[cite: 11]
+                <td colspan="2">Average Rating</td>[cite: 14]
                 <td>4.38</td>
             </tr>
         </table>
     </section>
 
+    <!-- Feedback Form Section with Form Extensions -->
     <section id="form">
         <h2>Give Your Feedback</h2>
         <form action="submit_feedback.php" method="post">
@@ -74,7 +76,7 @@
             <input type="text" id="name" name="name"><br>
 
             <!-- Form Extension: E-mail input -->
-            <label for="email">E-mail:</label>[cite: 11]
+            <label for="email">E-mail:</label>[cite: 14]
             <input type="email" id="email" name="email"><br>
             
             <label>Overall rating:</label><br>
@@ -82,7 +84,7 @@
             <label for="good">Good</label>
             
             <!-- Form Extension: Third radio option "Average" -->
-            <input type="radio" id="average" name="rating" value="average">[cite: 11]
+            <input type="radio" id="average" name="rating" value="average">[cite: 14]
             <label for="average">Average</label>
 
             <input type="radio" id="poor" name="rating" value="poor">
@@ -92,7 +94,7 @@
             <label for="lab">I attended all labs</label><br>
 
             <!-- Form Extension: At least 3 checkboxes for practice topics -->
-            <p>Topics I want more practice on:</p>[cite: 11]
+            <p>Topics I want more practice on:</p>[cite: 14]
             <input type="checkbox" id="prac_tables" name="extra_practice[]" value="tables">
             <label for="prac_tables">Tables & Forms</label><br>
             <input type="checkbox" id="prac_semantic" name="extra_practice[]" value="semantic">
@@ -101,7 +103,7 @@
             <label for="prac_css">CSS Styling</label><br>
 
             <!-- Form Extension: Drop-down list for Section/Group -->
-            <label for="section">Section/Group:</label>[cite: 11]
+            <label for="section">Section/Group:</label>[cite: 14]
             <select id="section" name="section">
                 <option value="sec1">Section 1</option>
                 <option value="sec2">Section 2</option>
@@ -114,19 +116,19 @@
 
     <!-- Semantic HTML Extension: Student Comments Section -->
     <section id="comments">
-        <h2>Student Comments</h2>
+        <h2>Student Comments</h2>[cite: 14]
         <article>
-            <h3>Afiqah</h3>
-            <p>The lab exercises are very clear and structured nicely for beginners.</p>
+            <h3>Afiqah</h3>[cite: 14]
+            <p>The lab exercises are very clear and structured nicely for beginners.</p>[cite: 14]
         </article>
         <article>
-            <h3>Hafiz</h3>
-            <p>Really enjoyed learning about tables and semantic layout tags!</p>
+            <h3>Hafiz</h3>[cite: 14]
+            <p>Really enjoyed learning about tables and semantic layout tags!</p>[cite: 14]
         </article>
     </section>
 
     <footer>
-        <p>Copyright © 2026 CSF3133</p>[cite: 11]
+        <p>Copyright © 2026 CSF3133</p>
     </footer>
 </body>
 </html>
