@@ -3,18 +3,99 @@
   <head>
     <meta charset="UTF-8">
     <title>Campus Bakery - Online Order Page</title>
+
+  </head>
     <body>
 
       <!-- Header Section -->
-      <div id="header"><h1>Campus Bakery <span>- Freshyly baked breads and cakes</span></h1></div>
+      <div id="header"><h1>Campus Bakery&reg; <span>- Freshyly baked breads and cakes</span></h1></div>
 
       <!-- Navigation Section -->
       <div id="nav"><a href="#home">Home</a> | <a href="#price">Price List</a> | <a href="#order">Order From</a></div>
 
       <!-- Content Section -->
-      <div id="content"><h2>Welcome to our bakery!!!</h2><p>We are proud to serve you with <strong>delicious</strong> and fresh pastries from oven daily<br>
-        Please checkout our menu or <em>place an order</em>.Feel free to contact us by <a href="mailto:campusbakery@gmail.com">clicking here</a>.</p>
+      <div id="home"><h2>Welcome to our bakery!!!</h2><p>We are proud to serve you with <strong>delicious</strong> and fresh pastries from oven daily<br>
+        Please checkout our menu or <em>place an order</em>.<br>Feel free to contact us by <a href="mailto:campusbakery@gmail.com">clicking here</a>.</p>
+
+        <!-- Order From Section -->
+        <div id="order"><h3>Place your pre-order</h3>
+          <form action="submit_form.php" method="post">
+
+            <!-- full name -->
+            <label for="fullname">FULL NAME:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="e.g. Ali Bakar" required autofocus><br><br>
+
+            <!--Phone number-->
+            <label for="phone">PHONE NUMBER:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 012-345678" required><br><br>
+
+            <!-- email -->
+            <label for="email">EMAIL ADDRESS:</label><br>
+            <input type="email" id="email" name="email" placeholder="e.g. example@gmail.com" required><br><br>
+
+            <!-- Pickup Date -->
+            <label for="pickdate">PICKUP DATE:</label><br>
+            <input type="date" id="pickdate" name="pickdate"  required><br><br>
+
+            <!-- Pickup Time -->
+            <label for="picktime">PICKUP TIME:</label><br>
+            <input type="time" id="picktime" name="picktime"  required><br><br>
+
+            <!-- Flavour -->
+            <label for="flavour">SELECT FLAVOUR:</label><br>
+            <input id="flavour" name="flavour" list="flavours" placeholder="Choose flavour"><br>
+            <datalist id="flavours">
+              <option value="Chocolate">
+              <option value="Vanilla">
+              <option value="Strawberry">
+              <option value="Yoghurt">
+             </datalist><br><br>
+
+            <!-- Icing Colour -->
+            <label for="icing">ICING COLOUR:</label><br>
+            <input type="color" id="icing" name="icing" value="#ffc0cb"><br><br>
+
+            <!-- Sweetness Level -->
+            <label for="sweet">SWEETNESS LEVEL (1 = lesss Sweet, 5 = Extra Sweet):</label><br>
+            <input type="range" id="sweet" name="sweet" min="1" max="5" step="1" value="3"><br><br>
+
+
+            <!-- Item quantity for price calculation -->
+            <label for="cupcake">CUPCAKES (RM3.00 each)</label><br>
+            <input type="number" id="cupcake" name="cupcake"  min="0" value="0"><br><br>
+
+            <label for="cake">CAKE SLICE (RM5.00 each)</label><br>
+            <input type="number" id="cake" name="cake"  min="0" value="0"><br><br>
+
+            <!-- Output price -->
+            <p><strong>TOTAL PRICE: RM <output name="totalprice" for="cupcakes slices">0</output>.00</strong></p>
+
+            <!--Submit Button -->
+            <input type="submit" value="Submit Order">
+
+          </form>
+        </div>
+      </div>
+
+      <!-- SideBar Section: Price List -->
+      <div id="price">
+        <h3>Price List</h3>
+        <ul>
+          <li>Cupcake &euro; / RM 3.00 each</li>
+          <li>Cake Slice &pound; / RM 5.00 each</li>
+          <li>Customized cake &ndash; RM 45.00 each</li>
+        </ul>
+
+        <!-- HTML entity requirement -->
+        <p><em>SPECIAL OFFER: Orders &gt; 10 pieces get a free drink!!!</em></p>
+
+      </div>
+
+      <!-- footer -->
+      <div id="footer">
+        <p>&copy;&nbsp;2026 CampusBakery&reg; All rights reserved.</p>
+      </div>
+            
     </body>
-  </head>
   
 </html>
