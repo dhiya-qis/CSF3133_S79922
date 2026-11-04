@@ -19,7 +19,7 @@
 
         <!-- Order From Section -->
         <div id="order"><h3>Place your pre-order</h3>
-          <form action="submit_form.php" method="post">
+          <form action="submit_form.php" method="post" oninput="totalprice.value = (Number(cupcake.value)*3) + (Number(cake.value)*5);">
 
             <!-- full name -->
             <label for="fullname">FULL NAME:</label><br>
