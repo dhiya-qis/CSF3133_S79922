@@ -1,1 +1,111 @@
+/* Page Setup */
+body{
+  font-family: Arial, sans-serif;
+  background-color: #F2F4F4;
+  color: #333333;
+  margin: 0;
+  padding: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+/* Headings */
+h1{
+  text-decoration: overline;
+      
+}
+
+h2{
+  text-decoration: overline;
+  color: #1B4F72;
+  
+}
+
+/* Navigation Bar */
+nav ul{
+
+  list-style-type: none;
+  background-color: #2E86C1;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+nav li{
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Link States */
+a:link{
+  color: #FFFFFF;
+}
+
+a:visited{
+  color: #D5D8DC;
+}
+
+a:hover{
+  background-color: #F39C12;
+  color: #FFFFFF;
+  padding: 5px;
+}
+
+a:active{
+  color: #78281F;
+}
+
+#video {
+  background-color: #EAFAF1;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #C0392B;
+}
+
+/* Class Selectors */
+.card{
+  background-color: #F9EBEA;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #C0392B;
+}
+
+.old-price{
+  text-decoration: line-through;
+  color: #7F8C8D;
+}
+
+.trip-form{
+  background-color: #FEF9E7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 1px solid #F9E79F;
+}
+
+/*Responsive Video*/
+video {
+  max-width: 100%; 
+  height: auto; 
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #2C3E50;
+  color: #FFFFFF;
+}
+
+footer a:link, footer a:visited {
+  color: #85C1E9;
+}
