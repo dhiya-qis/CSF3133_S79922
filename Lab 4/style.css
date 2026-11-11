@@ -63,7 +63,7 @@ a:active{
 }
 
 #video {
-  background-color: #EAFAF1;
+  background-color: #B4D0E7;
   padding: 20px;
   margin-top: 20px;
   border: 1px solid #C0392B;
@@ -102,10 +102,10 @@ footer {
   text-align: center;
   margin-top: 30px;
   padding: 15px;
-  background-color: #2C3E50;
+  background-color: #B4D0E7;
   color: #FFFFFF;
 }
 
 footer a:link, footer a:visited {
-  color: #F8C471;
+  color: #EAFAF1;
 }
