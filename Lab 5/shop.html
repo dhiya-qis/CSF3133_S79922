@@ -4,26 +4,60 @@
     <meta charset="utf-8">
     <title>Campus Bookstore</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheets" href="shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
   </head>
   <body>
-    <style>
-      h1 { text-align: center; }
-    </style>
-    <ul>
-      <li><a href="#home">Home</a></li>
+    <!-- Error 1 (shop.html, Line 7): should be "stylesheet" and not "stylesheets" -->
+    <!-- Error 2 (shop.html, Line 11): style not belong in <body> -->
+    <!-- Error 3 (shop.html, Line 18): style="color=" should be use "style=color:"-->
+    <!-- Error 4 (shop.html, Line 20): table id product not have matching name in css-->
+    <!-- Error 5 (shop.css, Line 2):  typo Roboto with Robotto-->
+    <!-- Error 6 (shop.css, Line 4):  missing "-" in no repeat-->
+    <!-- Error 7 (shop.css, Line 5):  missing 'k' in background-->
+    <!-- Error 8 (shop.css, Line 18):  nav link uses display: inline instead of display: block-->
+    <!-- Error 9 (shop.css, Line 23): typo ":" in li:a -->
+    <!-- Error 10 (shop.css, Line 27): has 'd' in collapsed -->
+    <!-- Error 11 (shop.css, Line 34):  tr:nth-child(2) only target row 2 only, use  tr:nth-child(even) -->
+    <!-- Error 12 (shop.css, Line 37): use hovered instead of hover-->
+    <!-- Error 13 (shop.css, Line 45):  missing semicolon ";"-->
+
+    <!-- Header -->
+    <header>
+      <h1>Campus Bookstore</h1>
+      <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+    <!-- navigation bar -->
+    <nav>
+      <ul>
+      <li><a class="active" href="#home">Home</a></li>
       <li><a href="#books">Books</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <h1 style="color=#1B4F72;">Campus Bookstore</h1>
-    <p>Textbooks, stationery and more for every student.</p>
-    <table id="product">
-      <tr><th>Item</th><th>Category</th><th>Price (RM)</th></tr>
-      <tr><td>Web Design Basics</td><td>Textbook</td><td>45.00</td></tr>
-      <tr><td>A4 Notebook</td><td>Stationery</td><td>6.50</td></tr>
-      <tr><td>USB Drive 32GB</td><td>Gadget</td><td>25.00</td></tr>
-      <tr><td>Highlighter Set</td><td>Stationery</td><td>9.90</td></tr>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+    <table id="products">
+      <thead>
+        <tr><th>Item</th><th>Category</th><th class="price-col">Price (RM)</th></tr>
+      </thead>
+
+      <tbody>
+      <tr><td>Web Design Basics</td><td>Textbook</td><td class="price-col">45.00</td></tr>
+      <tr><td>A4 Notebook</td><td>Stationery</td><td class="price-col">6.50</td></tr>
+      <tr><td>USB Drive 32GB</td><td>Gadget</td><td class="price-col">25.00</td></tr>
+      <tr><td>Highlighter Set</td><td>Stationery</td><td class="price-col">9.90</td></tr>
+      </tbody>
     </table>
-    <footer>&copy; 2026 Campus Bookstore</footer>
+      </main>
+
+    <!-- Footer Section-->
+    <footer>
+      <p>&copy; 2026 Campus Bookstore</p>
+    </footer>
   </body> 
 </html>
