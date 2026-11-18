@@ -1,48 +1,120 @@
+/* General page setup and font configuration */
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url("paper.gif");
+
   background-repeat: no-repeat;
   background-position: right top;
+  margin: 0;
+  padding: 0;
 }
-ul {
+
+/* Headings font styling */
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+}
+
+/* Paragraph line height for readability */
+p {
+  line-height: 1.6;
+}
+
+/* Header section background image and layout */
+header {
+  background-image: url("books.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1B4F72;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Horizontal navigation bar container */
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;                                                                                                                                                    
-  background-color: #333;
-} 
-li { 
-  float: left; 
-} 
-li a { 
-  display: block; 
-  color: white; 
-  padding: 14px 16px; 
-  text-decoration: none; 
-} 
-li a:hover { 
-  background-color: #111; 
-} 
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Navigation hover state */
+nav li a:hover {
+  background-color: #111;
+}
+
+/* Active navigation page highlight */
+nav li a.active {
+  background-color: #04AA6D;
+}
+
+/* Main container central alignment and width limits */
+main {
+  width: 90%;
+  max-width: 980px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Table structure and collapse borders */
 #products {
-  border-collapse: collapse; 
-  width: 100%; 
-} 
-#products td, #products th { 
-  border: 1px solid #ddd; 
-  padding: 8px; 
-} 
-#products tr:nth-child(even) { 
-  background-color: #f2f2f2; 
-} 
-#products tr:hover { 
-  background-color: #ddd; 
-} 
-#products th { 
-  background-color: #04AA6D; 
-  color: white; 
-} 
-footer { 
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Table cell padding and borders */
+#products td, #products th {
+  border: 1px solid #ddd;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* Table header styling with uppercase and center alignment */
+#products th {
+  background-color: #04AA6D;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Alternating row background colors */
+#products tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Table row hover effect */
+#products tr:hover {
+  background-color: #ddd;
+}
+
+/* Right alignment for price column */
+.price-col {
+  text-align: right;
+}
+
+/* Footer layout and styling */
+footer {
   background-color: #f1f1f1;
   text-align: center;
-  padding: 10px; 
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
 }
