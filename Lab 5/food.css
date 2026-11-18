@@ -1,0 +1,19 @@
+/* General page styling */
+body{
+  background-color: #FBF7F0;
+  font-family: 'Open Sans', sans-serif;
+  color: #2C2C2C;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header background image and text layout */
+header{
+  background-image: url("header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
