@@ -1,8 +1,8 @@
 body {
-  font-family: 'Robotto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-image: url("paper.gif");
-  background-repeat: no repeat;
-  bacground-position: right top;
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 ul {
   list-style-type: none;
@@ -15,26 +15,26 @@ li {
   float: left; 
 } 
 li a { 
-  display: inline; 
+  display: block; 
   color: white; 
   padding: 14px 16px; 
   text-decoration: none; 
 } 
-li:a:hover { 
+li a:hover { 
   background-color: #111; 
 } 
 #products {
-  border-collapse: collapsed; 
+  border-collapse: collapse; 
   width: 100%; 
 } 
 #products td, #products th { 
   border: 1px solid #ddd; 
   padding: 8px; 
 } 
-#products tr:nth-child(2) { 
+#products tr:nth-child(even) { 
   background-color: #f2f2f2; 
 } 
-#products tr:hovered { 
+#products tr:hover { 
   background-color: #ddd; 
 } 
 #products th { 
@@ -42,7 +42,7 @@ li:a:hover {
   color: white; 
 } 
 footer { 
-  background-color: #f1f1f1 
+  background-color: #f1f1f1;
   text-align: center;
   padding: 10px; 
 }
