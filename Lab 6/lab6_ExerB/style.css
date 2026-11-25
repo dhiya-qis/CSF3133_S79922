@@ -1,0 +1,124 @@
+/* Global page styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 24px;
+  background-color: #f4f6f8;
+  color: #1f2933;
+  line-height: 1.5;
+}
+
+h2, h3 {
+  color: #1b4f72;
+  margin-top: 0;
+}
+
+/* Form and control panels */
+form,
+.panel,
+.game-box {
+  background-color: #ffffff;
+  padding: 16px 20px;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  max-width: 520px;
+  margin-bottom: 16px;
+}
+
+label {
+  display: inline-block;
+  min-width: 115px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 7px 10px;
+  border: 1px solid #b0bec5;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2471a3;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  background-color: #2471a3;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 6px;
+  margin-top: 4px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #154360;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Result & status messages */
+#result {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 12px 0 6px;
+}
+
+#checkedTime, #welcomeMsg,
+#startTime, #summary {
+  font-size: 14px;
+  color: #4a5568;
+  margin: 4px 0 12px;
+}
+
+/* Choice images */
+img {
+  max-width: 110px;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 6px;
+  margin: 6px 8px 6px 0;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  margin-top: 14px;
+  width: 100%;
+  max-width: 520px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th,
+td {
+  border: 1px solid #cbd5e1;
+  padding: 9px 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #1b4f72;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) td {
+  background-color: #f8fafc;
+}
