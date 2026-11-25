@@ -42,3 +42,13 @@ function showTable() {
   tableHTML += "</table>";
   document.getElementById("tableContainer").innerHTML = tableHTML;
 }
+
+// Error 1 (grade.html, Line 9): missing return that make the form doesn't erase
+// Error 2 (grade.html, Line 17): should be showTable() and not showtable()
+// Error 3 (grade.html, Line 19): name doesn't match with grade.js
+// Error 4 (grade.js, Line 5): change name = "" to name.trim() ===""
+// Error 6 (grade.js, Line 9): isNan should be isNaN
+// Error 7 (grade.js, Line 14): should use || or else the if statement stay false and the alert wont happen
+// Error 8 (grade.js, Line 38): should start i with 0 and not with 1 in For loops
+// Error 9 (grade.js, Line 43): .innerHtml cannot be lowercase and should be .innerHTML
+// Error 10 (grade.js, Line 28-31): getElementID is capatilized, should be style.color and return false
