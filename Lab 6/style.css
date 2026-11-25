@@ -1,0 +1,35 @@
+/* Page background and default font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F6F8;
+    margin: 20px;
+    color: #222;
+}
+
+/* Header */
+header{
+  background-color: #1B4F72;
+  color: #fff;
+  padding: 18px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  
+  
+}
+
+/*Section */
+section {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+/* Buttons and hover effect */
+button {
+  background-color: #2E86C1;
+  padding: 16px;
+  border-radius: 4px;
+  margin-right: 6px;
+  border: none;
+}
