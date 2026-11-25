@@ -1,92 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial scale=1.0">
-    <title>Rock, Paper, Scissors Game</title>
-    <!-- Link external stylesheet -->
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <!-- Character set and responsive viewport setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissors Game</title>
+  <!-- Link external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
-    <!-- Header section -->
-    <header>
-      <h1>Rock, Paper, Scissors Game</h1>
-      <p>Enter your name, click Start Game, then choose Rock, Paper, Scissors.</p>
-    </header>
+<body>
+  <!-- Header section with title and instructions -->
+  <header>
+    <h1>Rock, Paper, Scissors Game</h1>
+    <p>Enter your name, click Start Game, then choose Rock, Paper, Scissors.</p>
+  </header>
 
-    <!-- Player name input and start button -->
-    <section class="player-section">
-      <label for="playerName">Your name:</label>
-      <input type="text" id="playerName" placeholder="Enter your name">
-      <button type="button" onclick="startGame()">Start Game</button>
-      <p id="welcomeMsg"></p>
-    </section>
+  <!-- Player name input and start button -->
+  <section class="player-section">
+    <label for="playerName">Your name:</label>
+    <input type="text" id="playerName" placeholder="Enter your name">
+    <button type="button" onclick="startGame()">Start Game</button>
+    <p id="welcomeMsg"></p>
+  </section>
 
-    <!-- Choice button -->
-    <section class="game-section">
+  <!-- Game choices and You vs Computer arena -->
+  <section class="game-section">
+    <div class="choices">
+      <button type="button" onclick="playRound('rock')">Rock</button>
+      <button type="button" onclick="playRound('paper')">Paper</button>
+      <button type="button" onclick="playRound('scissors')">Scissors</button>
+    </div>
+
+    <div class="arena">
       <div class="fighter">
-        <button type="button" onclick="playRound('rock')">Rock</button>
-        <button type="button" onclick="playRound('paper')">Paper</button>
-        <button type="button" onclick="playRound('scissors')">Scissors</button>
+        <p><strong>You</strong></p>
+        <img id="playerImg" src="rock.png" alt="Player Choice">
       </div>
 
-      <div class="arena">
-        <div class="fighter">
-          <p><strong>You</strong></p>
-          <img id="playerImg" src="rock.png" alt="Player Choice">
-        </div>
+      <div class="vs">VS</div>
 
-        <div class="vs">VS</div>
-        <div class="fighter">
-          <p><strong>Computer</strong></p>
-          <img id="computerImg" src="rock.png" alt="Computer Choice">
-        </div>
+      <div class="fighter">
+        <p><strong>Computer</strong></p>
+        <img id="computerImg" src="rock.png" alt="Computer Choice">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Round result -->
-    <section class="status-section">
-      <p id="result"></p>
-      <p class="scoreboard">
-        Wins: <span id="wins">0</span> |
-        Losses: <span id="losses">0</span> |
-        Draws: <span id="Draws">0</span>
-      </p>
-    </section>
+  <!-- Round result message and scoreboard -->
+  <section class="status-section">
+    <p id="result"></p>
+    <p class="scoreboard">
+      Wins: <span id="wins">0</span> |
+      Losses: <span id="losses">0</span> |
+      Draws: <span id="draws">0</span>
+    </p>
+  </section>
 
-    <!-- Round summary -->
-    <section class="history-section">
-      <h2>History</h2>
-      <table id="history">
-        <thead>
-          <tr>
-            <th>Round</th>
-            <th>You</th>
-            <th>Computer</th>
-            <th>Result</th>
-          </tr>
-        </thead>
+  <!-- History table and summary/reset controls -->
+  <section class="history-section">
+    <h2>History</h2>
+    <table id="history">
+      <thead>
+        <tr>
+          <th>Round</th>
+          <th>You</th>
+          <th>Computer</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody id="historyBody"></tbody>
+    </table>
 
-        <tbody id="historyBody"></tbody>
-        
-      </table>
+    <div class="controls">
+      <button type="button" onclick="showSummary()">Show Summary</button>
+      <button type="button" onclick="resetGame()">Reset</button>
+    </div>
+    <p id="summary"></p>
+  </section>
 
-      <div class="controls">
-        <button type="button" onclick="showSummary()">Show Summary</button>
-        <button type="button" onclick="resetGame()">Reset</button>
-      </div>
+  <!-- Footer with start time and copyright -->
+  <footer>
+    <p id="startTime"></p>
+    <p>© 2026 Computer Science Club</p>
+  </footer>
 
-      </section>
-
-    <!-- Footer -->
-    <footer>
-      <p id="startTime"></p>
-      <p>&copy; 2026 Computer Science Club</p>
-    </footer>
-
-    <!-- Link External Javascript -->
-    <script src="game.js"></script>
-        
-  </body>
+  <!-- Link external JavaScript file before closing body -->
+  <script src="game.js"></script>
+</body>
 </html>
